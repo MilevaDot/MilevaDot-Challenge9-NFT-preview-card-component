@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --background: hsl(217, 54%, 11%);
+    --background-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --cyan-color: hsl(178, 100%, 50%);
+    --soft-blue-color: hsl(215, 51%, 70%);
+    --white-color: hsl(0, 0%, 100%);
+    --paragraph-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--background);
+    font-family: 'Outfit', serif;
+}
+
+main {
+    width: 340px;
+    padding: 24px;
+    background: var(--background-card);
+    border-radius: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--background-card);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.over-image {
+    background: hsla(178, 100%, 50%,0.4);
+    position: absolute;
+    width: 292px;
+    height: 292px;
+    border-radius: 12px;
+    display: none;
+}
+
+.over-image img {
+    background: none;
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 12px;
+}
+
+header:hover .over-image {
+    display: block;
+}
+
+.card-title {
+    color: var(--white-color);
+    background: var(--background-card);
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.card-title:hover {
+    color: var(--cyan-color);
+}
+
+.card-paragraph {
+    background: var(--background-card);
+    font-size: var(--paragraph-size);
+    color: var(--soft-blue-color);
+    font-weight: 300;
+}
+
+.content,
+.content-ethereum,
+.content-clock,
+.content-clock img,
+.content-clock span,
+.content-ethereum img,
+.content-ethereum span,
+footer,
+footer p,
+footer p span {
+    background: var(--background-card);
+}
+
+.content-ethereum {
+    display: flex;
+    gap: 8px;
+}
+
+.content-clock {
+    display: flex;
+    gap: 8px;
+}
+
+.content-ethereum img {
+    width: 12px;
+    height: 18px;
+}
+
+.content-clock img {
+    width: 16px;
+    height: 18px;
+}
+
+.content-clock span {
+    color: var(--soft-blue-color);
+    font-size: 16px;
+}
+
+.content-ethereum span {
+    color: var(--cyan-color);
+    font-size: 16px;
+    display: inline-block;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--dark-blue-line);
+    padding: 18px 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    gap: 10px;
+}
+
+footer img {
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--white-color);
+}
+
+footer p {
+    color: var(--soft-blue-color);
+    font-weight: 300;
+}
+
+.name-creator {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.name-creator:hover {
+    color: var(--cyan-color);
+}
